@@ -1,0 +1,130 @@
+/* ===== NAVBAR ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #efe4e1, #f6f1e8);
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #222;
+}
+
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f5c542;
+}
+
+.message-container{
+  margin-top:100px;
+  margin-left:20px;
+  margin-right:20px;
+  font-size:30px;
+  padding:100px;
+  border:none;
+  border-radius:40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:all 0.3s ease;
+}
+
+
+
+.message-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+  
+  .message-box {
+  border:solid;
+  border-radius:10px;
+  display:inline-block;
+  padding:20px;
+  margin-bottom:20px;}
+
+  /*image*/
+  .message-container{
+  background-image: url("header.jpg");
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;
+
+  padding: 100px;
+  
+
+
+  color: white; 
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("header.jpg");
+}
+
+.line{
+  margin-left:100px;
+  display:inline-block
+}
+
+
+/* ---------- FEATURE SECTION ---------- */
+.feature-section {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 70px 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 420px;
+  min-height: 460px;
+  border-radius: 24px;
+  overflow: hidden;
+  background:#f6f1e8;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.feature-card h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+}
+
+.feature-card p {
+  padding: 0 20px 25px;
+  font-size: 20px;
+  color: #555;
+}

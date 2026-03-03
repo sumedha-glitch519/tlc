@@ -1,0 +1,121 @@
+/*NAVBAR
+*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #efe4e1, #f6f1e8);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #222;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: #f5c542;
+}
+
+#bookForm {
+  width: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("add.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.2),
+    0 0 40px rgba(0,0,0,0.15);
+}
+
+#bookForm input,
+#bookForm textarea,
+#bookForm select {
+  background: rgba(255,255,255,0.9);
+  color: black;
+}
+#bookForm input,
+#bookForm textarea {
+  width: 90%;
+  padding: 14px;
+  font-size:16px;
+  border-radius:8px;
+  border: 1px solid #ccc;
+}
+
+
+#bookForm textarea{
+  min-height:200px;
+  resize:vertical;
+}
+#bookForm button {
+  padding: 14px;
+  font-size: 18px;
+  background-color: rgb(110, 52, 52);
+  color: white;
+  border: none;
+  border-radius:8px;
+  cursor: pointer;
+  transition: ease background-color 0.3s, color 0.3s;
+}
+
+#bookForm button:hover {
+  background-color: rgba(110, 52, 52, 0.791);
+  color: white;
+}
+.form-container{
+  margin-top:50px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-label{
+  margin-top:0px;
+}
+#bookForm select {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  height: 50px;              /* makes it taller */
+  background-color: white;
+}
+.star-rating {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.star-rating span {
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.star-rating span.active {
+  color: #f6c23e;
+}

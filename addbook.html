@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="addbook.css" rel="stylesheet">
+    <title>Homepage</title>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">The Last Chapter</div>
+
+      <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="library.html">My Library</a></li>
+      <li><a href="addbook.html">Add Books</a></li>
+      
+    </ul>
+  </nav>
+
+<div class="form-container">
+
+    
+    <form id="bookForm">
+      <h1 style="margin-bottom:0px">Add a Book</h1>
+      <label for="text" class="title-label"><br>Enter title of book:</label>
+      <input type="text" id="title" required><br>
+      <label for="author" class="author-label"><br>Enter author of book:</label><br>
+      <input type="text" id="author" required><br>
+      <label for="image" class="file-label">Add an image:</label><br>
+      <input type="file" id="image" accept="image/*" required><br>
+
+      <label for="status">Reading Status:</label>
+          <select id="status" required>
+            <option value="">Select status</option>
+            <option value="Reading">Reading</option>
+            <option value="Completed">Completed</option>
+            <option value="Wishlist">Wishlist</option>
+          </select><br>
+          <label>Rating:</label>
+            <div class="star-rating">
+              <span data-value="1">★</span>
+              <span data-value="2">★</span>
+              <span data-value="3">★</span>
+              <span data-value="4">★</span>
+              <span data-value="5">★</span>
+            </div><br>
+
+<input type="hidden" id="rating" value="0">
+      <label for="review" class="review-label"><br>Write a review:</label>
+      <textarea id="review" placeholder="Enter your review here..."></textarea>
+
+      <button type="submit">Add Book</button>
+    </form>
+</div>
+
+<script src="addbook.js"></script>
+
+</body>
